@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<PROCEDURE>
+	<TITLE>How to Bathe a Cat</TITLE>
+	<OVERVIEW>This procedure tells you how to bathe a cat.
+		<!-- Opened the WARNING tag -->
+		<WARNING>Cats don't like to take baths. You could get hurt doing this. Be sure to obtain all the required protective gear before you start.</WARNING>
+	  <!-- Closed the OVERVIEW tag -->
+	</OVERVIEW>
+	<!-- Corrected the spelling -->
+	<EQUIPMENT>
+		<!-- Changed ITEM tags to self-closing -->
+		<ITEM>Hockey Mask</ITEM>
+		<ITEM>Padded Full-body Kevlar Armor</ITEM>
+		<ITEM>Tub full of warm water</ITEM>
+		<ITEM>Towels</ITEM>
+		<ITEM>First Aid kit</ITEM>
+		<ITEM>Cat Shampoo</ITEM>
+		<!-- Closed the EQUIPMENT tag -->
+	</EQUIPMENT>
+	<INSTRUCTIONS>
+		<STEP>Locate the cat, who by now is hiding under the bed.</STEP>
+		<STEP>Place the cat in the tub of water.</STEP>
+		<!-- Opened and closed the ITEM tag-->
+		<ITEM>Using the First Aid kit, repair the damage to your head and arms.</ITEM>
+		<STEP>Place the cat back in the tub and hold it down.</STEP>
+		<STEP>Wash it really fast, then make an effort to dry it with the towels.</STEP>
+		<STEP>Decide not to do this again.</STEP>
+		<!-- Closed the INSTRUCTIONS tag -->
+	</INSTRUCTIONS>
+	<!-- Closed the PROCEDURE tag -->
+</PROCEDURE>

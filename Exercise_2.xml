@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<students>
+	<student id = "0533Q">
+		<name>Daniel Sanchez</name>
+		<address>Barajas, 28042 Madrid</address>
+		<dob>22/05/2002</dob>
+		<subject>computer science</subject>
+	</student>
+	<student id = "0412Z">
+		<name>Arturo Bastida</name>
+		<adress>Pegaso, 28022</adress>
+		<dob>18/12/2002</dob>
+		<subject>chemistry</subject>
+		<subject>sociology</subject>
+	</student>
+</students>
