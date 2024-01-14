@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE CATALOG [
+<!ELEMENT CATALOG (PRODUCT+)>
+
+<!ELEMENT PRODUCT (SPECIFICATIONS+,OPTIONS?,PRICE+,NOTES?)>
+
+<!ATTLIST PRODUCT
+
+NAME CDATA #IMPLIED
+
+CATEGORY (HandTool|Table|Shop-Professional) "HandTool"
+PARTNUM CDATA #IMPLIED
+
+PLANT (Pittsburgh|Milwaukee|Chicago) "Chicago"
+INVENTORY (InStock|Backordered|Discontinued) "InStock">
+
+<!ELEMENT SPECIFICATIONS (RPCDATA)>
+<!ATTLIST SPECIFICATIONS
+
+WEIGHT CDATA #IMPLIED
+
+POWER CDATA #IMPLIED>
+
+<!ELEMENT OPTIONS (#PCDATA)>
+<!ATTLIST OPTIONS
+FINISH (Metal |Polished|Matte) "Matte"
+ADAPTER (Included|Optional|NotApplicable) "Included"
+CASE (HardShell|Soft|NotApplicable) "HardShell">
+
+<!ELEMENT PRICE (#PCDATA)>
+<!ATTLIST PRICE
+MSRP CDATA #IMPLIED
+WHOLESALE CDATA #IMPLIED
+STREET CDATA #IMPLIED
+SHIPPING CDATA #IMPLIED>
+
+<!ELEMENT NOTES (#PCDATA)>
+
+]>
+<CATALOG>
+	<PRODUCT NAME="Hammer" CATEGORY="HandTool" PARTNUM="HT123" PLANT="Pittsburgh" INVENTORY="InStock">
+		<SPECIFICATIONS WEIGHT="2 lbs" POWER="Manual"/>
+		<OPTIONS FINISH="Polished" ADAPTER="Included" CASE="HardShell">Some additional options here</OPTIONS>
+		<PRICE MSRP="$29.99" WHOLESALE="$19.99" STREET="$24.99" SHIPPING="$5.00"/>
+		<NOTES>Highly durable hand tool for various tasks.</NOTES>
+	</PRODUCT>
+
+	<PRODUCT NAME="Table Saw" CATEGORY="Table" PARTNUM="TS456" PLANT="Milwaukee" INVENTORY="Backordered">
+		<SPECIFICATIONS WEIGHT="50 lbs" POWER="Electric"/>
+		<OPTIONS FINISH="Matte" ADAPTER="NotApplicable" CASE="Soft"/>
+		<PRICE MSRP="$399.99" WHOLESALE="$349.99" STREET="$379.99" SHIPPING="$10.00"/>
+		<NOTES>Powerful table saw for woodworking projects.</NOTES>
+	</PRODUCT>
+</CATALOG>
